@@ -1,0 +1,9 @@
+<h2>Product List</h2>
+
+<div *ngIf="products.length === 0">
+  No products available
+</div>
+
+<div *ngFor="let p of products">
+  {{p.name}} - {{p.price}} - {{p.description}}
+</div>
